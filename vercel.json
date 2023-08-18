@@ -8,9 +8,7 @@
         "src": "/(./*)",
         "dest": "/"
       }
-    ],
-    "env": {
-      "MONGODB_URI": "@your-mongodb-uri"
-    }
+    ]
+    
   }
   
