@@ -24,7 +24,7 @@ Credential:true
 ))
 app.get('/',(req,res)=>{
 
-res.send('<h2>Welcome  Awais Malik</h2>')
+res.json({name:"Awais Malilk"})
 
 }
 
