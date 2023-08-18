@@ -12,16 +12,7 @@ app.use(express.json())
 app.use(cors())
  app.use('/api/auth',require('./routes/auth.js'))
 
-app.use(cors(
-    {
 
-origin:[],
-methods:['POST','GET'],
-Credential:true
-
-
-    }
-))
 app.get('/',(req,res)=>{
 
 res.json({name:"Awais Malilk"})
