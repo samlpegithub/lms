@@ -10,7 +10,14 @@ ConnectDatabas();
  const server=http.createServer(app);
 app.use(express.json())
 app.use(cors())
+app.use(cors({
+   origin:["https://react-home-w1fx.vercel.app"],
+   methods:['POST','GET'],
+   Credentials:true
+}
+   ))
  app.use('/api/auth',require('./routes/auth.js'))
+
 
 app.use('/',(req,res)=>{
 
