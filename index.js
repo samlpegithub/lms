@@ -12,10 +12,9 @@ app.use(express.json())
 app.use(cors())
  app.use('/api/auth',require('./routes/auth.js'))
 
+app.use('/',(req,res)=>{
 
-app.get('/',(req,res)=>{
-
-res.json({name:"Awais Malilk"})
+res.json({name:"Awais Malilk",roll_no:19497})
 
 }
 
